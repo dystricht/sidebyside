@@ -1,7 +1,7 @@
 {
-  "name": "webtests",
+  "name": "sidebyside",
   "version": "1.0.0",
-  "description": "I'm testing javascript here",
+  "description": "Customer Database Cards",
   "main": "textbox.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
