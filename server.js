@@ -1,8 +1,8 @@
-var path = require("path");
+const path = require("path");
 var __dir = "/home/dillon/p5-projects/webtests";
 node_xj = require("xls-to-json");
 node_xj({
-  input: path.dirname() + "/WalkAround.xls", // input xls
+  input: path.dirname('') + "/WalkAround.xls", // input xls
   //output: path.dirname() + "/website/units.json", // output json
   output: null,
   sheet: "WalkAround"  // specific sheetname
