@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(400, 400);
   background(51);
-  loadJSON('/overlocked', gotData);
+  loadJSON('/all', gotData);
   console.log('running');
 }
 
@@ -21,6 +21,8 @@ function gotData(data) {
 
     console.log("Name is " + name);
     text(name, x, y);
+
+    textfield = select('#textfield');
 
   }
 }

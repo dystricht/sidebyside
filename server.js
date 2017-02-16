@@ -28,13 +28,22 @@ var express = require('express');
 
 var app = express();
 
+var card = express();
+
 var server = app.listen(3000, listening);
 
 function listening() {
   console.log("listening. . . ");
 }
 
-app.use(express.static('website'));
+app.use(express.static('src'));
+
+app.get('/', mainPage);
+
+function mainPage(req, response) {
+
+  response.send('Main Page');
+}
 
 app.get('/search/:flower', sendFlower);
 
